@@ -1,0 +1,13 @@
+USE LibraryDB
+GO
+
+CREATE PROC StoredProcedure1
+AS
+BEGIN
+	SELECT No_Of_Copies
+		FROM BOOK_COPIES
+		INNER JOIN BOOK ON BOOK.BookId = BOOK_COPIES.BookId
+		INNER JOIN LIBRARY_BRANCH ON LIBRARY_BRANCH.BranchId = BOOK_COPIES.BranchId
+		WHERE Title = 'The Lost Tribe' AND BranchName = 'Sharpstown'
+END
+GO

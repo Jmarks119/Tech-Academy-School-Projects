@@ -1,0 +1,12 @@
+USE LibraryDB
+GO
+
+CREATE PROC StoredProcedure5
+AS
+BEGIN
+	SELECT BranchName, COUNT(EntryID) AS [Total Loaned Books:]
+		FROM LIBRARY_BRANCH BRANCH
+		INNER JOIN BOOK_LOANS LOANS ON BRANCH.BranchId = LOANS.BranchId
+		GROUP BY BranchName
+END
+GO
