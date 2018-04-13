@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="menu_stylesheet.css">
+        
+        <title>Online Order</title>
+    </head>
+    <body>
+        <div class="container" id="menuContainer">
+            <h1 class="text-center main-heading">Awesome Pies Pizza co.<br />Online Menu</h1>
+
+            <!-- Accordion-style Menu Form -->
+            <div id="accordionMenu">
+
+                <!--Pizza Size Selection-->
+                <div class="card">
+                    <div class="card-header" id="headingPizzaSize">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapsePizzaSize" aria-expanded="true" aria-controls="collapsePizzaSize">
+                                Pizza Size
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapsePizzaSize" class="collapse show" aria-labelledby="headingPizzaSize" data-parent="#accordionMenu">
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pizzaSizeSelection" id="personal" value="personal" checked>
+                                <label class="form-check-label" for="personal">
+                                    Personal
+                                </label>
+                                <small class="text-muted">
+                                    $6.00
+                                </small>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pizzaSizeSelection" id="medium" value="medium">
+                                <label class="form-check-label" for="medium">
+                                    Medium
+                                </label>
+                                <small class="text-muted">
+                                    $10.00
+                                </small>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pizzaSizeSelection" id="large" value="large">
+                                <label class="form-check-label" for="large">
+                                    Large
+                                </label>
+                                <small class="text-muted">
+                                    $14.00
+                                </small>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pizzaSizeSelection" id="xtraLarge" value="xtraLarge">
+                                <label class="form-check-label" for="extraLarge">
+                                    Large
+                                </label>
+                                <small class="text-muted">
+                                    $16.00
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Meat Selection -->
+                <div class="card">
+                    <div class="card-header" id="headingMeat">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseMeat" aria-expanded="false" aria-controls="collapseMeat">
+                                Meats Selection
+                            </button>
+                            <small class="text-muted">
+                                First selection is free, each additional is +$1.00.
+                            </small>
+                        </h5>
+                    </div>
+                    <div id="collapseMeat" class="collapse" aria-labelledby="headingMeat" data-parent="#accordionMenu">
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="pepperoni">
+                                <label class="form-check-label" for="pepperoni">
+                                    Pepperoni
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="sausage">
+                                <label class="form-check-label" for="sausage">
+                                    Sausage
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="canadianBacon">
+                                <label class="form-check-label" for="canadianBacon">
+                                    Canadian Bacon
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="groundBeef">
+                                <label class="form-check-label" for="groundBeef">
+                                    Ground Beef
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="anchovies">
+                                <label class="form-check-label" for="anchovies">
+                                    Anchovies
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="chicken">
+                                <label class="form-check-label" for="chicken">
+                                    Chicken
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Veggies Selection-->
+                <div class="card">
+                    <div class="card-header" id="headingVeggies">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseVeggies" aria-expanded="false" aria-controls="collapseVeggies">
+                                Veggies Selection
+                            </button>
+                            <small class="text-muted">
+                                First selection is free, each additional is +$1.00.
+                            </small>
+                        </h5>
+                    </div>
+                    <div id="collapseVeggies" class="collapse" aria-labelledby="headingVeggies" data-parent="#accordionMenu">
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="tomatoes">
+                                <label class="form-check-label" for="tomatoes">
+                                    Tomatoes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="onions">
+                                <label class="form-check-label" for="onions">
+                                    Onions
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="olives">
+                                <label class="form-check-label" for="olives">
+                                    Olives
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="greenPeppers">
+                                <label class="form-check-label" for="greenPeppers">
+                                    Green Peppers
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="mushrooms">
+                                <label class="form-check-label" for="mushrooms">
+                                    Mushrooms
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="pineapple">
+                                <label class="form-check-label" for="pineapple">
+                                    Pineapple
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="spinach">
+                                <label class="form-check-label" for="spinach">
+                                    Spinach
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="jalapenos">
+                                <label class="form-check-label" for="jalapenos">
+                                    Jalapenos
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cheese Selection -->
+                <div class="card">
+                    <div class="card-header" id="headingCheese">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseCheese" aria-expanded="false" aria-controls="collapseCheese">
+                                Cheese Selection
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseCheese" class="collapse" aria-labelledby="headingCheese" data-parent="#accordionMenu">
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cheeseSelection" id="regularCheese" value="regularCheese" checked>
+                                <label class="form-check-label" for="regularCheese">
+                                    Regular Cheese
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cheeseSelection" id="noCheese" value="noCheese">
+                                <label class="form-check-label" for="noCheese">
+                                    No Cheese
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cheeseSelection" id="extraCheese" value="extraCheese">
+                                <label class="form-check-label" for="extraCheese">
+                                    Extra Cheese
+                                </label>
+                                <small class="text-muted">
+                                    +$3.00
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sauce Selection -->
+                <div class="card">
+                    <div class="card-header" id="headingSauce">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSauce" aria-expanded="False" aria-controls="collapseSauce">
+                                Sauce Selection
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseSauce" class="collapse" aria-labelledby="headingSauce" data-parent="#accordionMenu">
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sauceSelection" id="marinara" value="marinara" checked>
+                                <label class="form-check-label" for="marinara">
+                                    Marinara Sauce
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sauceSelection" id="whiteSauce" value="whiteSauce">
+                                <label class="form-check-label" for="whiteSauce">
+                                    White Sauce
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sauceSelection" id="barbequeSauce" value="barbequeSauce">
+                                <label class="form-check-label" for="barbequeSauce">
+                                    Barbeque Sauce
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sauceSelection" id="noSauce" value="noSauce">
+                                <label class="form-check-label" for="noSauce">
+                                    No Sauce
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crust Selection -->
+                <div class="card">
+                    <div class="card-header" id="headingCrust">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseCrust" aria-expanded="false" aria-controls="collapseCrust">
+                                Crust Selection
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseCrust" class="collapse" aria-labelledby="headingCrust" data-parent="#accordionMenu">
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="crustSelection" id="plainCrust" value="plainCrust" checked>
+                                <label class="form-check-label" for="plainCrust">
+                                    Plain Crust
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="crustSelection" id="garlicButterCrust" value="garlicButterCrust">
+                                <label class="form-check-label" for="garlicButterCrust">
+                                    Garlic Butter Crust
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="crustSelection" id="spicyCrust" value="spicyCrust">
+                                <label class="form-check-label" for="spicyCrust">
+                                    Spicy Crust
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="crustSelection" id="houseSpecialCrust" value="houseSpecialCrust">
+                                <label class="form-check-label" for="houseSpecialCrust">
+                                    House Special Crust
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="crustSelection" id="cheeseStuffedCrust" value="cheeseStuffedCrust">
+                                <label class="form-check-label" for="cheeseStuffedCrust">
+                                    Cheese Stuffed Crust
+                                </label>
+                                <small class="text-muted">
+                                    +$3.00
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menu Button Controls -->
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary btn-lg">Reset Selection</button>
+                <button type="button" class="btn btn-primary btn-lg">Confirm</button>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
