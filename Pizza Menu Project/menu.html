@@ -59,7 +59,7 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="pizzaSizeSelection" id="xtraLarge" value="xtraLarge">
                                 <label class="form-check-label" for="extraLarge">
-                                    Large
+                                    Extra Large
                                 </label>
                                 <small class="text-muted">
                                     $16.00
@@ -84,37 +84,37 @@
                     <div id="collapseMeat" class="collapse" aria-labelledby="headingMeat" data-parent="#accordionMenu">
                         <div class="card-body">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="pepperoni">
+                                <input class="form-check-input" type="checkbox" value="pepperoni" id="pepperoni">
                                 <label class="form-check-label" for="pepperoni">
                                     Pepperoni
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="sausage">
+                                <input class="form-check-input" type="checkbox" value="sausage" id="sausage">
                                 <label class="form-check-label" for="sausage">
                                     Sausage
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="canadianBacon">
+                                <input class="form-check-input" type="checkbox" value="canadianBacon" id="canadianBacon">
                                 <label class="form-check-label" for="canadianBacon">
                                     Canadian Bacon
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="groundBeef">
+                                <input class="form-check-input" type="checkbox" value="groundBeef" id="groundBeef">
                                 <label class="form-check-label" for="groundBeef">
                                     Ground Beef
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="anchovies">
+                                <input class="form-check-input" type="checkbox" value="anchovies" id="anchovies">
                                 <label class="form-check-label" for="anchovies">
                                     Anchovies
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="chicken">
+                                <input class="form-check-input" type="checkbox" value="chicken" id="chicken">
                                 <label class="form-check-label" for="chicken">
                                     Chicken
                                 </label>
@@ -138,49 +138,49 @@
                     <div id="collapseVeggies" class="collapse" aria-labelledby="headingVeggies" data-parent="#accordionMenu">
                         <div class="card-body">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="tomatoes">
+                                <input class="form-check-input" type="checkbox" value="tomatoes" id="tomatoes">
                                 <label class="form-check-label" for="tomatoes">
                                     Tomatoes
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="onions">
+                                <input class="form-check-input" type="checkbox" value="onions" id="onions">
                                 <label class="form-check-label" for="onions">
                                     Onions
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="olives">
+                                <input class="form-check-input" type="checkbox" value="olives" id="olives">
                                 <label class="form-check-label" for="olives">
                                     Olives
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="greenPeppers">
+                                <input class="form-check-input" type="checkbox" value="greenPeppers" id="greenPeppers">
                                 <label class="form-check-label" for="greenPeppers">
                                     Green Peppers
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="mushrooms">
+                                <input class="form-check-input" type="checkbox" value="mushrooms" id="mushrooms">
                                 <label class="form-check-label" for="mushrooms">
                                     Mushrooms
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="pineapple">
+                                <input class="form-check-input" type="checkbox" value="pineapple" id="pineapple">
                                 <label class="form-check-label" for="pineapple">
                                     Pineapple
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="spinach">
+                                <input class="form-check-input" type="checkbox" value="spinach" id="spinach">
                                 <label class="form-check-label" for="spinach">
                                     Spinach
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="jalapenos">
+                                <input class="form-check-input" type="checkbox" value="jalapenos" id="jalapenos">
                                 <label class="form-check-label" for="jalapenos">
                                     Jalapenos
                                 </label>
@@ -315,11 +315,76 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Menu Button Controls -->
             <div class="d-flex justify-content-between">
-                <button type="button" class="btn btn-secondary btn-lg">Reset Selection</button>
-                <button type="button" class="btn btn-primary btn-lg">Confirm</button>
+                <button type="button" class="btn btn-secondary btn-lg" onclick="formReset()">Reset Selection</button>
+                <button type="button" class="btn btn-primary btn-lg" onclick="displayReceipt()">Confirm</button>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="receiptModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Your Pizza Receipt:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table text-capitalize">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Selection:</th>
+                                    <th scope="col">SubTotal:</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size:</th>
+                                    <td id="sizeSelection"></td>
+                                    <td id="sizeSubTotal"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Meats:</th>
+                                    <td id="meatSelection"></td>
+                                    <td id="meatSubTotal"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Veggies:</th>
+                                    <td id="veggiesSelection"></td>
+                                    <td id="veggiesSubTotal"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cheese:</th>
+                                    <td id="cheeseSelection"></td>
+                                    <td id="cheeseSubTotal"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Sauce:</th>
+                                    <td id="sauceSelection"></td>
+                                    <td id="sauceSubTotal"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Crust:</th>
+                                    <td id="crustSelection"></td>
+                                    <td id="crustSubTotal"></td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th scope="row">Pizza Total Cost:</th>
+                                    <td id="pizzaTotal"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Confirm</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -328,5 +393,6 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="menu_scripts.js"></script>
     </body>
 </html>
