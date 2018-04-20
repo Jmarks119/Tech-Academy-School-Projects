@@ -10,10 +10,7 @@ namespace TwentyOneApp
     {
         static void Main()
         {
-            TwentyOneGame game = new TwentyOneGame() { Dealer = "Jackson", Name = "TwentyOne" };
-            game.Players = new List<string>() { "Jackson", "Bill", "Joe" };
-            game.ListPlayers();
-            Console.ReadLine();
+            Game game = new TwentyOneGame();
             Deck deck = new Deck();
             deck.Shuffle(3);
 
