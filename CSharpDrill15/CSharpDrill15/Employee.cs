@@ -21,5 +21,27 @@ namespace CSharpDrill15
             Console.ReadLine();
             Environment.Exit(0);
         }
+
+        public static Boolean operator== (Employee employee1, Employee employee2)
+        {
+            if (employee1.Id == employee2.Id)
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
+        }
+        public static Boolean operator!= (Employee employee1, Employee employee2)
+        {
+            if (employee1 == employee2)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
     }
 }
