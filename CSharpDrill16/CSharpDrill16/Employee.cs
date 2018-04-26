@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpDrill15
+namespace CSharpDrill16
 {
-    public class Employee : Person, IQuittable
+    public class Employee<T> : Person
     {
         public int Id { get; set; }
+
+        public List<T> things { get; set; }
 
         public override void SayName()
         {
@@ -22,17 +24,18 @@ namespace CSharpDrill15
             Environment.Exit(0);
         }
 
-        public static Boolean operator== (Employee employee1, Employee employee2)
+        public static Boolean operator ==(Employee<T> employee1, Employee<T> employee2)
         {
             if (employee1.Id == employee2.Id)
             {
                 return true;
-            } else
+            }
+            else
             {
                 return false;
             }
         }
-        public static Boolean operator!= (Employee employee1, Employee employee2)
+        public static Boolean operator !=(Employee<T> employee1, Employee<T> employee2)
         {
             if (employee1 == employee2)
             {
