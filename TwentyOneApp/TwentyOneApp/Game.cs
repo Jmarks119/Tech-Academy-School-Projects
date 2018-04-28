@@ -8,13 +8,10 @@ namespace TwentyOneApp
 {
     public abstract class Game
     {
-        public List<Player> Players { get; set; }
-
+        public List<Player> Players { get; set; } = new List<Player>();
         public string Name { get; set; }
-
-        public string Dealer { get; set; }
-
         public abstract void Play();
+        public Dictionary<Player, int> Bets { get; set; } = new Dictionary<Player, int>();
 
         public virtual void ListPlayers()
         {
