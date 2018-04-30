@@ -20,6 +20,7 @@ namespace TwentyOneApp
             Console.WriteLine(card);
             using (StreamWriter file = new StreamWriter(@"C:\Users\Jmark\Documents\Coding Projects\Sample Logs\log.txt", true))
             {
+                file.Write(DateTime.Now + " ");
                 file.WriteLine(card);
             }
             Deck.Cards.RemoveAt(0);
