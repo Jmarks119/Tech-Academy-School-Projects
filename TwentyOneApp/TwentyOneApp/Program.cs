@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Casino;
 
 namespace TwentyOneApp
@@ -18,6 +19,11 @@ namespace TwentyOneApp
                 Player player = new Player(playerName, bank);
                 Game game = new TwentyOneGame();
                 game += player;
+                using (StreamWriter logFile = new StreamWriter(@"C:\Users\Jmark\Documents\Coding Projects\Sample Logs\log.txt", true))
+                {
+                    logFile.Write(DateTime.Now + " ");
+                    logFile.WriteLine(player.Id);
+                }
                 player.IsActivelyPlaying = true;
                 while (player.IsActivelyPlaying && player.Balance > 0)
                 {
