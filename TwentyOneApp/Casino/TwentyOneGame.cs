@@ -20,11 +20,18 @@ namespace Casino
             Dealer.Stay = false;
             Dealer.Deck = new Deck();
             Dealer.Deck.Shuffle();
-            Console.WriteLine("Place your bet");
 
             foreach (Player player in Players)
             {
-                int bet = Convert.ToInt32(Console.ReadLine());
+                bool validAnswer = false;
+                int bet = 0;
+                while (!validAnswer)
+                {
+                    Console.WriteLine("Place your bet!");
+                    validAnswer = int.TryParse(Console.ReadLine(), out bet);
+                    if (!validAnswer) Console.WriteLine("Please only enter a whole number.");
+                }
+                if (bet < 1) throw new FraudException();
                 bool succesfullyBet = player.Bet(bet);
                 if (!succesfullyBet)
                 {
