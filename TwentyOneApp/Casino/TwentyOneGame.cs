@@ -31,7 +31,7 @@ namespace Casino
                     validAnswer = int.TryParse(Console.ReadLine(), out bet);
                     if (!validAnswer) Console.WriteLine("Please only enter a whole number.");
                 }
-                if (bet < 1) throw new FraudException();
+                if (bet < 1) throw new FraudException("Security! Kick this person out.");
                 bool succesfullyBet = player.Bet(bet);
                 if (!succesfullyBet)
                 {
