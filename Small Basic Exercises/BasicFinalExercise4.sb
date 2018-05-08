@@ -1,0 +1,5 @@
+If Clock.Hour > 1 And Clock.Hour < 14 Then
+  TextWindow.WriteLine("Copy Failed. The London office is currently open.")
+Else
+  File.CopyFile("C:\Users\Jmark\Documents\Source Folder\Text File.txt","C:\Users\Jmark\Documents\Target Folder")
+EndIf

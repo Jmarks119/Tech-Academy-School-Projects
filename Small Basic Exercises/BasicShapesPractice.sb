@@ -1,0 +1,2 @@
+GraphicsWindow.BrushColor = "Green"
+GraphicsWindow.FillTriangle(300,150,150,300,450,300)

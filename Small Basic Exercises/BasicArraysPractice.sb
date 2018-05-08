@@ -1,0 +1,28 @@
+For A =1 To 4
+  TextWindow.WriteLine("Please enter the name for User " + A + ":")
+  Name[A]= TextWindow.Read()
+EndFor
+For B=1 To 4
+  TextWindow.WriteLine("Whatis user " + B + "'s age?:")
+  Age[B]= TextWindow.Read()
+EndFor
+TextWindow.Write("Hello ")
+For A=1 To 4
+  TextWindow.Write(Name[A])
+  If A < 3 Then
+    TextWindow.Write(", ")
+  ElseIf A < 4 Then
+    TextWindow.Write(" and ")
+  EndIf
+EndFor
+TextWindow.Write(". You are ")
+For B = 1 To 4
+  TextWindow.Write(Age[B])
+  If B < 3 Then
+    TextWindow.Write(", ")
+  ElseIf B < 4 Then
+    TextWindow.Write(" and ")
+  EndIf
+EndFor
+TextWindow.WriteLine("")
+  

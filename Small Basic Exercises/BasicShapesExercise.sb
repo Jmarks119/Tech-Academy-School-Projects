@@ -1,0 +1,18 @@
+GraphicsWindow.Height = 500
+GraphicsWindow.Width = 500
+GraphicsWindow.Title = "Pop!"
+GraphicsWindow.BackgroundColor = "Blue"
+GraphicsWindow.BrushColor = "Brown"
+GraphicsWindow.FillRectangle(50,360,400,30)
+GraphicsWindow.FillRectangle(50,360,20,140)
+GraphicsWindow.FillRectangle(430,360,20,140)
+GraphicsWindow.BrushColor = "Red"
+GraphicsWindow.FillEllipse(200,260,100,100)
+GraphicsWindow.BrushColor = "Silver"
+GraphicsWindow.FillTriangle(200,360,210,360,200,310)
+GraphicsWindow.FillTriangle(300,360,290,360,300,310)
+Pin = Shapes.AddTriangle(245,20,255,20,250,50)
+Shapes.Animate(Pin,0,205,2000)
+Program.Delay(2000)
+GraphicsWindow.BrushColor = "Blue"
+GraphicsWindow.FillEllipse(200,260,100,100)

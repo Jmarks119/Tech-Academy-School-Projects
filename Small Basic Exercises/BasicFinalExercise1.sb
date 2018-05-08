@@ -1,0 +1,10 @@
+TextWindow.Title = "Number Comparer!"
+TextWindow.Write("Please enter a number: ")
+First_Number = TextWindow.ReadNumber()
+TextWindow.Write("Please enter another number: ")
+Second_Number = TextWindow.ReadNumber()
+If First_Number > Second_Number Then
+  TextWindow.WriteLine(First_Number)
+Else
+  TextWindow.WriteLine(Second_Number)
+EndIf

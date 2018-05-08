@@ -1,0 +1,18 @@
+GraphicsWindow.MouseMove = A
+GraphicsWindow.MouseDown = B
+GraphicsWindow.BackgroundColor = "Sky Blue"
+GraphicsWindow.PenWidth = (25)
+Sub B
+  C = GraphicsWindow.MouseX
+  D = GraphicsWindow.MouseY
+EndSub
+Sub A
+  E = GraphicsWindow.MouseX
+  F = GraphicsWindow.MouseY
+  If (Mouse.IsLeftButtonDown) Then
+    GraphicsWindow.PenColor = GraphicsWindow.GetRandomColor()
+    GraphicsWindow.DrawLine(C,D,E,F)
+  EndIf
+  C = E
+  D = F
+EndSub

@@ -1,0 +1,21 @@
+If (Clock.Hour < 12) Then
+  TextWindow.WriteLine("It is a.m.")
+Else
+  TextWindow.WriteLine("It is p.m.")
+EndIf
+
+TextWindow.Write("Type a number that includes a decimal: ")
+Number = TextWindow.ReadNumber()
+Program.Delay(1000)
+TextWindow.Write("Now we will round your number! ...")
+Program.Delay(1000)
+TextWindow.Write("Your rounded number is: " + Math.Round(Number) + ".")
+Program.Delay(1000)
+Remainder = Math.Remainder(Math.Round(Number), 2)
+If (Remainder = 0) Then
+  TextWindow.WriteLine(" This number is even!")
+  Program.Delay(1000)
+Else
+  TextWindow.WriteLine(" This is an odd number!")
+  Program.Delay(1000)
+EndIf

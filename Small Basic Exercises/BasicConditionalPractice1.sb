@@ -1,0 +1,11 @@
+start:
+TextWindow.Write("Are you a vegan?: ")
+Vegan = TextWindow.Read()
+If Vegan = "Yes" Then
+  TextWindow.WriteLine("I know, you've told me already. Several times...")
+ElseIf Vegan = "No" Then
+  TextWindow.WriteLine("Looks like meat is back on the menu!")
+Else
+  TextWindow.WriteLine("Please enter Yes or No.")
+  Goto start
+EndIf

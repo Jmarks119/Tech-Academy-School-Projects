@@ -1,0 +1,11 @@
+TextWindow.Title = "Office Hours"
+If Clock.Hour > 5 And Clock.Hour < 18 Then
+  TextWindow.WriteLine("The New York office is open!")
+Else
+  TextWindow.WriteLine("The New York office is closed...")
+EndIf
+If Clock.Hour > 1 And Clock.Hour < 14 Then
+  TextWindow.WriteLine("The London office is open!")
+Else
+  TextWindow.WriteLine("The London office is closed...")
+EndIf

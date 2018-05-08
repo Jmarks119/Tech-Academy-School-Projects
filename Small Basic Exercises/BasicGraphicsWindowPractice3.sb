@@ -1,0 +1,10 @@
+GraphicsWindow.Title = "Growing Lines!"
+GraphicsWindow.Height = 500
+GraphicsWindow.Width = 500
+GraphicsWindow.PenColor = "Red"
+GraphicsWindow.BackgroundColor = "Blue"
+For A = 1 To 15
+GraphicsWindow.PenWidth = A
+GraphicsWindow.DrawLine(20, A * 20, 400, A * 20)
+EndFor
+  GraphicsWindow.SetPixel(20,20,"Black")

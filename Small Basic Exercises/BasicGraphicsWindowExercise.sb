@@ -1,0 +1,22 @@
+GraphicsWindow.Height = 400
+GraphicsWindow.Width = 600
+GraphicsWindow.BackgroundColor = "Black"
+GraphicsWindow.Title = "It's a table I think!"
+GraphicsWindow.PenWidth = 5
+GraphicsWindow.PenColor = "White"
+GraphicsWindow.DrawLine(20,50,580,50)
+GraphicsWindow.PenWidth = 20
+GraphicsWindow.DrawLine(300,20,300,380)
+GraphicsWindow.FontSize = 20
+GraphicsWindow.FontBold = "true"
+GraphicsWindow.DrawBoundText(50,15,200,"A little of column A")
+GraphicsWindow.FontSize = 18
+GraphicsWindow.FontItalic = "true"
+GraphicsWindow.FontBold = "false"
+GraphicsWindow.DrawBoundText(360,16,200,"A little of column B")
+For A = 1 To 2096
+  X = Math.GetRandomNumber(561)
+  Y = Math.GetRandomNumber(331)
+  GraphicsWindow.SetPixel(X + 19,Y + 49,"White")
+  Program.Delay(1)
+EndFor

@@ -1,0 +1,10 @@
+TextWindow.Top = 0
+TextWindow.Left = 0
+TextWindow.Title = "This is a math exercise!"
+TextWindow.Write("Give me a number!: ")
+First_Number = TextWindow.ReadNumber()
+TextWindow.CursorTop = 1
+TextWindow.Write("Give me a number to add to the first one!: ")
+Second_Number = TextWindow.ReadNumber()
+TextWindow.CursorTop = 2
+TextWindow.WriteLine("Here's your sum: " + (First_Number + Second_Number))

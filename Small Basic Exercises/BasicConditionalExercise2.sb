@@ -1,0 +1,20 @@
+TextWindow.Write("Please enter how many apples you've picked: ")
+Apples = TextWindow.ReadNumber()
+TextWindow.WriteLine("You can either put these apples in Baskets that will carry 6, or tubs that will carry 30.")
+prompt:
+TextWindow.Write("Please enter 'Baskets' or 'Tubs': ")
+Container = TextWindow.Read()
+Program.Delay(2000)
+If (Container = "Baskets") Then
+  Required = Math.Ceiling(Apples / 6)
+  TextWindow.WriteLine("You will need " + Required + " baskets in order to hold all your apples.")
+  Program.Delay(1000)
+  TextWindow.WriteLine("You can pick " + (6 - Math.Remainder(Apples, 6)) + " more apples without bringing another basket.")
+ElseIf (Container = "Tubs") Then
+  Required = Math.Ceiling(Apples / 30)
+  TextWindow.WriteLine("You will need " + Required + " tubs in order to hold all your apples.")
+  Program.Delay(1000)
+  TextWindow.WriteLine("You can pick " + (30 - Math.Remainder(Apples, 30)) + " more apples without bringing another tub.")
+Else
+  Goto prompt
+EndIf

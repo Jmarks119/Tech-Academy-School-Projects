@@ -1,0 +1,11 @@
+Turtle.X = 20
+Turtle.Y = 200
+Sides = 200
+Angle = 360 / Sides
+Size = 1000 / Sides
+For A = 1 To Sides
+GraphicsWindow.PenColor = GraphicsWindow.GetRandomColor()
+GraphicsWindow.BackgroundColor = GraphicsWindow.GetRandomColor()
+Turtle.Move(Size)
+Turtle.Turn(Angle)
+EndFor

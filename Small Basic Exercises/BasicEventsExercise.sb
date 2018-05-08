@@ -1,0 +1,43 @@
+GraphicsWindow.Title = "Stamp Placer!"
+GraphicsWindow.KeyDown = CreateShape
+GraphicsWindow.KeyUp = Stamp
+GraphicsWindow.MouseDown = StartDrag
+GraphicsWindow.MouseMove = Drag
+GraphicsWindow.MouseUp = EndDrag
+GraphicsWindow.FontSize = 36
+Inputting = "False"
+Dragging = "False"
+Waiting:
+
+Sub CreateShape
+  If Inputting = "False" Then
+    Letter = GraphicsWindow.LastKey
+    Draggable = Shapes.AddText(GraphicsWindow.LastKey)
+    Inputting = "True"
+  Else
+  EndIf
+EndSub
+
+Sub Stamp
+  If GraphicsWindow.LastKey = Letter Then
+    GraphicsWindow.DrawText (Shapes.GetLeft(Draggable),Shapes.GetTop(Draggable),Letter)
+    Inputting = "False"
+  Else
+  EndIf
+EndSub
+  
+Sub StartDrag
+  Dragging = "True"
+EndSub
+
+Sub Drag
+  If Dragging = "True" And Inputting = "True" Then
+    Shapes.Move(Draggable,GraphicsWindow.MouseX,GraphicsWindow.MouseY)
+  Else
+  EndIf
+EndSub
+  
+Sub EndDrag
+  Dragging = "False"
+EndSub
+  

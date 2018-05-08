@@ -1,0 +1,3 @@
+If (5 = 5) Then
+  TextWindow.WriteLine("Five is equal to Five")
+EndIf

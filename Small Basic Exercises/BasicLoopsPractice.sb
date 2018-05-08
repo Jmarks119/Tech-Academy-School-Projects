@@ -1,0 +1,33 @@
+Amount = 1
+While (Amount < 1025)
+  TextWindow.WriteLine(Amount)
+  Amount = Amount * 2
+EndWhile
+
+For B = 1 To 10 
+  TextWindow.WriteLine(B)
+EndFor
+
+A = 50
+If A > 25 Then
+  TextWindow.WriteLine("50 is more than 25!")
+EndIf
+
+For B = 2 To 30 Step 2
+  TextWindow.WriteLine(B)
+EndFor
+
+For B = 29 To 1 Step -2
+  TextWindow.WriteLine(B)
+EndFor
+
+TextWindow.Write("Type in a number: ")
+First_Number = TextWindow.ReadNumber()
+TextWindow.Write("Type in another number: ")
+Second_Number = TextWindow.ReadNumber()
+If (First_Number > Second_Number) Then
+  Larger = First_Number
+Else
+  Larger = Second_Number
+EndIf
+  TextWindow.WriteLine("The larger number is: " + Larger)

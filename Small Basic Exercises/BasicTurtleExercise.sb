@@ -1,0 +1,12 @@
+GraphicsWindow.Title = "Squaremon!"
+GraphicsWindow.BackgroundColor = "Black"
+GraphicsWindow.Height = 220
+GraphicsWindow.Width = 220
+GraphicsWindow.PenColor = "White"
+Turtle.X = 10
+Turtle.Y = 210
+Turtle.Speed = 9
+For A = 1 To 4
+  Turtle.Move(200)
+  Turtle.TurnRight()
+EndFor

@@ -1,0 +1,4 @@
+TextWindow.WriteLine("Hellow World!")
+TextWindow.BackgroundColor = "White"
+TextWindow.Pause()
+TextWindow.ForegroundColor = "Red"

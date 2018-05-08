@@ -1,0 +1,9 @@
+TextWindow.Write("What is your name?: ")
+Name = TextWindow.Read()
+TextWindow.Write("Hi there, " + Name + "! What time do you think it is?: ")
+Timer = TextWindow.Read()
+TextWindow.Write("Well " + Name + ", per your computer, the time now is actually: ")
+PrintTime()
+Sub PrintTime
+  TextWindow.WriteLine(Clock.Time)
+EndSub

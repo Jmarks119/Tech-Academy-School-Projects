@@ -1,0 +1,8 @@
+For A = 1 To 100
+  B = Math.GetRandomNumber(A)
+  While (B < A)
+    TextWindow.Write(B + " ")
+    Program.Delay(5)
+    B = Math.GetRandomNumber(A)
+  EndWhile
+EndFor

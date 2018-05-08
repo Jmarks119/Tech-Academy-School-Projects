@@ -1,0 +1,12 @@
+While 1=1
+TextWindow.Write("Enter a word: ")
+Word = TextWindow.Read()
+WordBreaker()
+Endwhile
+
+Sub WordBreaker
+  For Char = 0 To Text.GetLength(Word)
+    TextWindow.WriteLine(Text.GetSubText(Word,Char,1))
+  EndFor
+  TextWindow.WriteLine("") 'Places a blank line before the next prompt.
+EndSub

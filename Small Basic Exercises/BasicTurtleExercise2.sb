@@ -1,0 +1,42 @@
+GraphicsWindow.Title = "Shapes!"
+GraphicsWindow.BackgroundColor = "Black"
+GraphicsWindow.PenColor = "White"
+GraphicsWindow.Height = 350
+GraphicsWindow.Width = 680
+GraphicsWindow.PenWidth = 10
+Turtle.Show()
+Turtle.Speed = 9
+Turtle.PenUp()
+Turtle.MoveTo(150,50)
+Turtle.PenDown()
+Turtle.Angle = 180
+Turtle.Move(200)
+Sides = 200
+Angle = 360 / Sides
+Size = 300 / Sides
+For A=1 To (Sides/2)
+  Turtle.Move(Size)
+  Turtle.Turn(Angle)
+EndFor
+Turtle.PenUp()
+Turtle.MoveTo(250, 300)
+Turtle.PenDown()
+For A=1 To 2
+  Turtle.Angle = 20
+  Turtle.Move(250)
+  Turtle.Angle = 160
+  Turtle.Move(250)
+EndFor
+Turtle.X = 20
+Turtle.Y = 330
+Turtle.Angle = 0
+GraphicsWindow.PenColor = "Red"
+GraphicsWindow.PenWidth = 5
+Turtle.Move(310)
+Turtle.TurnRight()
+Turtle.Move(640)
+Turtle.X = 20
+Turtle.Y = 330
+Turtle.Move(640)
+Turtle.TurnLeft()
+Turtle.Move(310)

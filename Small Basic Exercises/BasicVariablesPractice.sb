@@ -1,0 +1,6 @@
+TextWindow.Write("What is your favorite food?: ")
+food = TextWindow.Read()
+TextWindow.WriteLine("Your favorite food is " + food +"! Yummy!")
+TextWindow.Write("Which city would you most like to visit?: ")
+city = TextWindow.Read()
+TextWindow.WriteLine(city + " sounds like a great place to visit! Don't forget to bring your computer with you!")

@@ -1,0 +1,9 @@
+Family["Jackson"]["Name"] = "Jackson Marks"
+Family["Jackson"]["Age"] = 24
+Family["Jackson"]["Job"] = "Cashier"
+Family["Lizz"]["Name"] = "Elizabeth Marks"
+Family["Lizz"]["Age"] = 22
+Family["Lizz"]["Job"] = "Student"
+Family["Patti"]["Name"] = "Patricia Marks"
+Family["Patti"]["Age"] = 64
+Family["Patti"]["Job"] = "Merchandiser"

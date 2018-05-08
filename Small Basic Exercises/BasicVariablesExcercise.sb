@@ -1,0 +1,16 @@
+TextWindow.Write("What's your favorite Movie?: ")
+movie = TextWindow.Read()
+TextWindow.CursorTop = 4
+TextWindow.Write("Favorite Movie: " + movie)
+TextWindow.CursorTop = 1
+TextWindow.CursorLeft = 0
+TextWindow.Write("What's your favorite Book?: ")
+book = TextWindow.Read()
+TextWindow.CursorTop = 5
+TextWindow.Write("Favorite Book: " + book)
+TextWindow.CursorTop = 2
+TextWindow.CursorLeft = 0
+TextWindow.Write("What's your favorite TV Show?: ")
+tvshow = TextWindow.Read()
+TextWindow.CursorTop = 6
+TextWindow.WriteLine("Favorite TV Show: " + tvshow)

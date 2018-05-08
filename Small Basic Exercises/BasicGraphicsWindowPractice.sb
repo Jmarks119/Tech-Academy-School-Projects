@@ -1,0 +1,11 @@
+GraphicsWindow.Height = 500
+GraphicsWindow.Width = 700
+GraphicsWindow.BackgroundColor = "Silver"
+GraphicsWindow.Title = "The Graphics Window"
+GraphicsWindow.Show()
+GraphicsWindow.DrawLine(10,10,200,10)
+GraphicsWindow.DrawLine(10,10,10,200)
+GraphicsWindow.DrawLine(10,200,200,200)
+GraphicsWindow.DrawLine(200,10,200,200)
+GraphicsWindow.DrawLine(10,10,200,200)
+GraphicsWindow.DrawLine(10,200,200,10)
