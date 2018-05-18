@@ -1,0 +1,10 @@
+﻿@model FirstChallenge.Models.ComicBook
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Details About @Model.ComicTitle #@Model.EpisodeNumber</h2>
+<h4>Episode Title: @Model.EpisodeTitle</h4>
+<p><strong>Starring:</strong> @String.Join(", ", Model.Characters.Select(p => p.Name))</p>
+

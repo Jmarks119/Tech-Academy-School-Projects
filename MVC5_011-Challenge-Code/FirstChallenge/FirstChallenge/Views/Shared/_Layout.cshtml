@@ -29,6 +29,11 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
+        @if (ViewBag.Title != "My Comics" && ViewBag.Title != null)
+        {
+            @Html.ActionLink("Back to All Comics", "Index")
+            <hr />
+        }
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
